@@ -35,6 +35,26 @@
 
         <activity android:name=".layout.StepRelativeLayoutActivity"
             android:label="@string/steps_stair"/>
+
+
+        <activity android:name="jixiang.com.myandroid.view.TestTextViewActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestButtonActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestEditTextActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestImageViewActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestTabActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestRadioCheckActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestProgressBarActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestSeekBarActivity" >
+        </activity>
+        <activity android:name="jixiang.com.myandroid.view.TestDateTimePickerActivity" >
+        </activity>
     </application>
 
 </manifest>

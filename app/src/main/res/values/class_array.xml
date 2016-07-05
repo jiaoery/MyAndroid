@@ -7,8 +7,16 @@
         <item>jixiang.com.myandroid.layout.TestRelativeLayoutActivity</item>
         <item>jixiang.com.myandroid.layout.StepRelativeLayoutActivity</item>
         <item>jixiang.com.myandroid.layout.TestTableLayout</item>
-        <item>jixiang.com.myandroid.layout.TestGridLayo</item>
-
+        <item>jixiang.com.myandroid.layout.TestGridLayout</item>
+        <item>jixiang.com.myandroid.view.TestTextViewActivity</item>
+        <item>jixiang.com.myandroid.view.TestButtonActivity</item>
+        <item>jixiang.com.myandroid.view.TestEditTextActivity</item>
+        <item>jixiang.com.myandroid.view.TestImageViewActivity</item>
+        <item>jixiang.com.myandroid.view.TestTabActivity</item>
+        <item>jixiang.com.myandroid.view.TestRadioCheckActivity</item>
+        <item>jixiang.com.myandroid.view.TestProgressBarActivity</item>
+        <item>jixiang.com.myandroid.view.TestSeekBarActivity</item>
+        <item>jixiang.com.myandroid.view.TestDateTimePickerActivity</item>
 
     </string-array>
 </resources>

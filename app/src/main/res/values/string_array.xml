@@ -8,6 +8,15 @@
         <item>楼梯梯步 (相对布局)</item>
         <item>TableLayout 表格布局</item>
         <item>GridLayout </item>
+        <item>TextView</item>
+        <item>Button</item>
+        <item>EditText</item>
+        <item>ImageView</item>
+        <item>Tab</item>
+        <item>Radio  CheckBox</item>
+        <item>ProgressBar</item>
+        <item>SeekBar RatingBar</item>
+        <item >Date Time picker</item>
         
     </string-array>
 </resources>

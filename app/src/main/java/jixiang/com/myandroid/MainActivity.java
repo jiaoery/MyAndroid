@@ -53,14 +53,12 @@ public class MainActivity extends BaseActivity {
         autoCompletedtextview.setAdapter(arrayAdapter);
         MainAdapter adapter = new MainAdapter(titles, this);
         listview.setAdapter(adapter);
-
+        listview.setOnItemClickListener(new MyOnItemClickListener());
+        autoCompletedtextview.setOnItemClickListener(new MyOnItemClickListener());
     }
 
 
-    @OnItemClick(R.id.listview)
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 
-    }
 
     @OnEditorAction(R.id.auto_completedtextview)
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -98,5 +96,24 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText(this, "控件未找到!请重新搜索", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+
+
+    class MyOnItemClickListener implements AdapterView.OnItemClickListener {
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position,
+                                long id) {
+            if (parent.getAdapter() instanceof MainAdapter) {
+                //jumpToOtherActivity(position);
+                String toclass = parent.getItemAtPosition(position).toString();
+                jump(toclass);
+            } else if(parent.getAdapter() instanceof ArrayAdapter) {
+                String toclass = parent.getItemAtPosition(position).toString();
+                jump(toclass);
+            }
+        }
+
     }
 }
