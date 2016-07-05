@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/step1"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_marginLeft="40px"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/step2"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_regs_btn"
+        android:layout_toRightOf="@id/step1"
+        android:layout_above="@id/step1"
+        />
+    
+    <Button
+        android:id="@+id/step3"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_toRightOf="@id/step2"
+        android:layout_above="@id/step2"
+        />
+    
+    <Button
+        android:id="@+id/step4"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_regs_btn"
+        android:layout_toRightOf="@id/step3"
+        android:layout_above="@id/step3"
+        />
+    
+    <Button
+        android:id="@+id/step5"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_toRightOf="@id/step4"
+        android:layout_above="@id/step4"
+        />
+    <Button
+        android:id="@+id/step6"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_regs_btn"
+        android:layout_toRightOf="@id/step5"
+        android:layout_above="@id/step5"
+        />
+    
+    <Button
+        android:id="@+id/step7"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_toRightOf="@id/step6"
+        android:layout_above="@id/step6"
+        />
+    
+    <Button
+        android:id="@+id/step8"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_regs_btn"
+        android:layout_toRightOf="@id/step7"
+        android:layout_above="@id/step7"
+        />
+    
+    <Button
+        android:id="@+id/step9"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_toRightOf="@id/step8"
+        android:layout_above="@id/step8"
+        />
+    <Button
+        android:id="@+id/step10"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_regs_btn"
+        android:layout_toRightOf="@id/step9"
+        android:layout_above="@id/step9"
+        />
+    
+    <Button
+        android:id="@+id/step11"
+        android:layout_width="40px"
+        android:layout_height="25px"
+        android:background="@drawable/activation_btn"
+        android:layout_toRightOf="@id/step10"
+        android:layout_above="@id/step10"
+        />
+</RelativeLayout>

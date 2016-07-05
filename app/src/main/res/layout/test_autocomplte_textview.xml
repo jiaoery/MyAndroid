@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    android:orientation="vertical" >
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_completedtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:completionThreshold="2"
+        android:dropDownAnchor="@id/auto_completedtextview"
+        android:dropDownHeight="300dip"
+        android:dropDownHorizontalOffset="0dip"
+        android:dropDownSelector="@drawable/list_item_selector"
+        android:dropDownVerticalOffset="5dip"
+        android:dropDownWidth="wrap_content"
+        android:hint="请输入控件名称"
+        android:imeOptions="actionGo"
+        android:popupBackground="@drawable/text_bg"
+        android:singleLine="true" />
+
+</LinearLayout>

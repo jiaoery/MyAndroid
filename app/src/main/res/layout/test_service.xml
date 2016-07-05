@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <Button
+        android:id="@+id/start_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StartService"
+        android:layout_margin="5dip"/>
+    
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StopService"
+        android:layout_margin="5dip"/>
+    
+    <Button
+        android:id="@+id/bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BindService"
+        android:layout_margin="5dip"/>
+    
+    
+    <Button
+        android:id="@+id/unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnBindService"
+        android:layout_margin="5dip"/>
+    
+    <Button
+        android:id="@+id/get_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GetSum"
+        android:layout_margin="5dip"/>
+    
+</LinearLayout>

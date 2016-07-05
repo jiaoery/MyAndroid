@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip"
+    android:background="@drawable/list_item_selector">
+    
+    <ImageView
+        android:id="@+id/fruit_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:background="@drawable/fruit_apple"
+        android:contentDescription="@string/action_settings"/>
+
+    <TextView
+        android:id="@+id/fruit_title"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:textColor="@color/common_black_word"
+        android:textSize="16sp"
+        android:text="@string/action_settings"
+        android:minLines="2"
+        android:maxLines="2"/>
+</LinearLayout>

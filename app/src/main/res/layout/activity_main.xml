@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+     >
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_completedtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:completionThreshold="2"
+        android:dropDownAnchor="@id/auto_completedtextview"
+        android:dropDownHeight="300dip"
+        android:dropDownHorizontalOffset="0dip"
+        android:dropDownSelector="@drawable/list_item_selector"
+        android:dropDownVerticalOffset="5dip"
+        android:dropDownWidth="wrap_content"
+        android:hint="请输入控件名称"
+        android:imeOptions="actionGo"
+        android:layout_margin="5dip"
+        android:popupBackground="@drawable/popup_bg"
+        android:singleLine="true"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@null" />
+
+</LinearLayout>

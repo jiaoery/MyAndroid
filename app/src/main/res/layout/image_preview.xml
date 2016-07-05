@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="   缩小    " />
+
+    <!-- 正中间的控件，做为参照物, 它的id要先定义 -->
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:layout_centerInParent="true"
+        android:text="@string/action_settings"
+        android:visibility="invisible" />
+
+    <!-- 定义上面的控件，相对中间的上面, 在center之上，跟center的左边对齐，跟center的右边对齐 -->
+
+    <Button
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignRight="@id/center"
+        android:text="放大" />
+
+    <!-- 定义左边的控件，相对于center的正左边， 跟center上边对齐，和下边对齐 -->
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_toLeftOf="@id/center"
+        android:text="逆时针" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/center"
+        android:layout_toRightOf="@id/center"
+        android:text="顺时针" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/top" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/action_settings"
+            android:src="@drawable/fruit_banana"
+            android:drawingCacheQuality="high"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

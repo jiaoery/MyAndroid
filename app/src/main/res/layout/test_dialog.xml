@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="显示对话框" />
+
+        <Button
+            android:id="@+id/show2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="显示自定义view的对话框" />
+
+        <Button
+            android:id="@+id/show3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="单选列表对话框" />
+
+        <Button
+            android:id="@+id/show4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="多选列表对话框" />
+
+        <Button
+            android:id="@+id/show5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="Adapter类的对话框" />
+
+        <Button
+            android:id="@+id/show6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="日期选择对话框" />
+
+        <Button
+            android:id="@+id/show7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="时间选择对话框" />
+
+        <Button
+            android:id="@+id/show8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="进度条对话框" />
+
+        <Button
+            android:id="@+id/show9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="Activity做Dialog" />
+        
+        <Button
+            android:id="@+id/show10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="自定义的Dialog" />
+
+        <Button
+            android:id="@+id/show11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="自定义风格的ALertDialog" />
+
+        <Button
+            android:id="@+id/show12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="自定义样式的AlertDialog" />
+        
+        <Button
+            android:id="@+id/show13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="取消通知" />
+    </LinearLayout>
+
+</ScrollView>

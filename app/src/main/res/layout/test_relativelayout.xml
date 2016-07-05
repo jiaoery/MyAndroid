@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!-- 正中间的控件，做为参照物, 它的id要先定义 -->
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/action_settings"/>
+    
+    <!-- 定义上面的控件，相对中间的上面, 在center之上，跟center的左边对齐，跟center的右边对齐 -->
+    <Button
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:layout_above="@id/center"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignRight="@id/center"/>
+    
+    <!-- 定义左边的控件，相对于center的正左边， 跟center上边对齐，和下边对齐 -->
+    <Button
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:layout_toLeftOf="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_alignBottom="@id/center"
+        />
+    
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:layout_below="@id/center"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignRight="@id/center"/>
+    
+    <Button
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_settings"
+        android:layout_toRightOf="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_alignBottom="@id/center"/>
+    
+</RelativeLayout>

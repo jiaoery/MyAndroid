@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_titles">
+
+        <item>LinearLayout 线性布局(计算器)</item>
+        <item>FrameLayout 帧布局</item>
+        <item>RelativeLayout 相对布局</item>
+        <item>楼梯梯步 (相对布局)</item>
+        <item>TableLayout 表格布局</item>
+        <item>GridLayout </item>
+        
+    </string-array>
+</resources>

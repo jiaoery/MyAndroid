@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="2dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/list_item_pressed"
+            android:gravity="center|left"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="日志列表"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/write_dinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="写日志"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginBottom="15dip"
+        android:background="@color/common_grey" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="0.5dip"
+        android:listSelector="@null"
+        />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你还没有日志，快去写日志吧！"
+        android:textColor="@color/common_blue_word"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

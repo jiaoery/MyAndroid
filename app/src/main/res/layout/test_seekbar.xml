@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 默认样式的seekbar -->
+    <SeekBar
+        android:id="@+id/seekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:progress="10"
+        android:max="100"
+        />
+
+    <!-- 自定义样式的seekbar 
+         thumb 是滑块
+         thumbOffset 是滑块的偏移,默认的偏移是滑块的大小
+         progressDrawable 进度条样式的背景-->
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:progress="10"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:thumbOffset="0dip"
+        android:thumb="@drawable/seekbar_thumb_selector"
+        />
+    
+    
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="1.5"
+        android:stepSize="0.5"
+        />
+</LinearLayout>

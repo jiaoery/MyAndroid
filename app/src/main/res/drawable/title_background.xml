@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape
+            android:innerRadius="100dip"
+            android:shape="oval"
+            android:dither="true"
+            >
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/transparent" />
+
+            <!-- 设置按钮的四个角为弧形 -->
+
+
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="360dip" />
+
+            <!-- <padding
+                android:bottom="15dp"
+                android:left="15dp"
+                android:right="15dp"
+                android:top="15dp" /> -->
+
+            <size
+                android:height="128dip"
+                android:width="128dip" />
+
+            <!-- 描边 -->
+            <stroke
+                android:width="4dip"
+                android:color="@color/common_grey" />
+
+        </shape>
+    </item>
+    <item>
+        <clip android:clipOrientation="horizontal">
+        <shape
+            android:innerRadius="100dip"
+            android:shape="oval"
+            android:dither="true">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/transparent" />
+
+            <!-- 设置按钮的四个角为弧形 -->
+
+
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="360dip" />
+
+
+            <padding
+                android:bottom="15dp"
+                android:left="15dp"
+                android:right="15dp"
+                android:top="15dp" />
+
+            <size
+                android:height="128dip"
+                android:width="128dip" />
+
+            <!-- 描边 -->
+            <stroke
+                android:width="4dip"
+                android:color="@color/common_blue" />
+
+        </shape>
+        </clip>
+    </item>
+    
+    <item>
+        <shape
+            android:innerRadius="100dip"
+            android:shape="oval"
+            android:dither="true">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/common_white" />
+
+            <!-- 设置按钮的四个角为弧形 -->
+
+
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="360dip" />
+
+
+            <padding
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+
+            <size
+                android:height="80dip"
+                android:width="80dip" />
+
+            <!-- 描边 -->
+            <stroke
+                android:width="0.5dip"
+                android:color="@color/black" />
+        </shape>
+    </item>
+
+</layer-list>

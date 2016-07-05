@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/gender" android:title="你的性别" android:numericShortcut="1">
+        <menu>
+            <group android:id="@+id/group_id" android:checkableBehavior="all">
+                <item android:id="@+id/gender_male" android:title="男性"></item>
+                <item android:id="@+id/gender_female" android:title="女性"></item>
+            </group>
+        </menu>
+    </item>
+    
+    <item android:id="@+id/color" android:title="喜欢的颜色"/>
+    <item android:id="@+id/car" android:title="喜欢的车"/>
+
+</menu>

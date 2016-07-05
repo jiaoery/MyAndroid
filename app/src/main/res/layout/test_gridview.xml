@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:cacheColorHint="@color/transparent"
+        android:stretchMode="columnWidth"
+        />
+    
+    <!-- stretchMode 
+    none  spacingWidth 只有在每个数据项的view宽度固定的时候有用
+    spacingWidth The spacing between each column is stretched.
+    columnWidth Each column is stretched equally.
+    spacingWidthUniform The spacing between each column is uniformly stretched..
+     -->
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.three.androidlearning.touchevent.OuterLLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_white">
+    
+    <com.three.androidlearning.touchevent.MiddleLLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dip"
+        android:background="@color/common_grey"
+        android:gravity="center"
+        >
+        
+        <com.three.androidlearning.touchevent.MyButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击按钮，触发触屏事件"
+            />
+        
+    </com.three.androidlearning.touchevent.MiddleLLayout>
+
+</com.three.androidlearning.touchevent.OuterLLayout>

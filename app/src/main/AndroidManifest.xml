@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jixiang.com.myandroid">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".layout.TestLinearLayout"
+            android:label="@string/test_linearlayout"/>
+
+        <activity android:name=".layout.TestGridLayout"/>
+
+        <activity android:name=".layout.TestFrameLayout"
+            android:label="@string/test_framelayout"/>
+
+        <activity android:name=".layout.TestRelativeLayoutActivity"
+            android:label="@string/test_relativelayout"/>
+
+        <activity android:name=".layout.TestTableLayout"
+            android:label="@string/test_tablelayout"/>
+
+        <activity android:name=".layout.StepRelativeLayoutActivity"
+            android:label="@string/steps_stair"/>
+    </application>
+
+</manifest>

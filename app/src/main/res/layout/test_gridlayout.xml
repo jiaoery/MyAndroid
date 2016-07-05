@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:rowCount="5"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/number_1"
+        android:text="@string/number_1" />
+
+    <Button
+        android:id="@+id/number_2"
+        android:text="@string/number_2" />
+
+    <Button
+        android:id="@+id/number_3"
+        android:text="@string/number_3" />
+
+    <Button
+        android:id="@+id/number_div"
+        android:text="@string/number_div" />
+
+    <Button
+        android:id="@+id/number_4"
+        android:text="@string/number_4" />
+
+    <Button
+        android:id="@+id/number_5"
+        android:text="@string/number_5" />
+
+    <Button
+        android:id="@+id/number_6"
+        android:text="@string/number_6" />
+
+    <Button
+        android:id="@+id/number_plus"
+        android:text="@string/number_plus" />
+
+    <Button
+        android:id="@+id/number_7"
+        android:text="@string/number_7" />
+
+    <Button
+        android:id="@+id/number_8"
+        android:text="@string/number_8" />
+
+    <Button
+        android:id="@+id/number_9"
+        android:text="@string/number_9" />
+
+    <Button
+        android:id="@+id/number_minus"
+        android:text="@string/number_minus" />
+
+    <Button
+        android:id="@+id/number_0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/number_0" />
+
+    <Button
+        android:id="@+id/number_dot"
+        android:text="@string/number_dot" />
+
+    <Button
+        android:id="@+id/number_add"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill_vertical"
+        android:text="@string/number_add" />
+
+    <Button
+        android:id="@+id/number_equ"
+        android:text="@string/number_equ"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        />
+
+</GridLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 层叠 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 底层 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/common_white" />
+
+            <corners android:radius="4dip" />
+
+            <stroke
+                android:dashGap="5dip"
+                android:dashWidth="5dip"
+                android:width="0.5dp"
+                android:color="@color/common_grey_word" />
+        </shape>
+    </item>
+    <!-- 次要进度值层 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="@color/common_border" />
+
+                <corners android:radius="4dip" />
+
+                <stroke
+                    android:dashGap="5dip"
+                    android:dashWidth="5dip"
+                    android:width="0.5dp"
+                    android:color="@color/common_blue" />
+            </shape>
+        </clip>
+    </item>
+    <!-- 进度值层 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/common_blue" />
+
+                <corners android:radius="4dip" />
+
+                <stroke
+                    android:dashGap="5dip"
+                    android:dashWidth="5dip"
+                    android:width="0.5dp"
+                    android:color="@color/common_red" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

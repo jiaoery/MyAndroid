@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/action_settings"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/edittext_normal"
+        
+        android:dropDownSelector="@drawable/list_item_selector"
+        android:dropDownVerticalOffset="10dip"
+        android:dropDownHorizontalOffset="10dip"
+        android:popupBackground="@drawable/popup_bg"
+        />
+
+</LinearLayout>
