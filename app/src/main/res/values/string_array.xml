@@ -17,6 +17,44 @@
         <item>ProgressBar</item>
         <item>SeekBar RatingBar</item>
         <item >Date Time picker</item>
+        <item>ListView entries</item>
+        <item>ListView ArrayAdapter</item>
+        <item>ListView SimpleAdapter</item>
+        <item>ListView BaseAdapter</item>
+        <item>TestCar</item>
+        <item>HorizontalListView</item>
+        <item>TestCarItem</item>
+        <item>AutoCompleteTextView</item>
+        <item>Spinner</item>
+        <item>GridView</item>
+        <item>Gallery</item>
+        <item>ExpandableListView</item>
+        <item>Dialog (AlertDialog)</item>
+        <item>Notification PopupWindow</item>
+        <item>Exam</item>
+        <item>Menu</item>
+        <item>Activity devliver params</item>
+        <item>Activity Lifecycle</item>
+        <item>Intent</item>
+        <item>Fragment</item>
+        <item>ViewPager</item>
+        <item>ViewPager Fragment</item>
+        <item>Animation</item>
+        <item>Properties Animation</item>
+        <item>TouchEvent 事件分发机制</item>
+        <item>Custom View</item>
+        <item>Bitmap</item>
+        <item>Image Preview</item>
+        <item>SharedPreferences</item>
+        <item>SqliteDatabase</item>
+        <item>StartService</item>
+        <item>WebView</item>
+        <item>Database Exam</item>
+        <item>JSON</item>
+        <item>AsyncTask</item>
+        <item>GetWeather</item>
+        <item>DownLoad Image</item>
+        <item>TestBitmapUtil</item>
         
     </string-array>
 </resources>

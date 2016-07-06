@@ -17,6 +17,44 @@
         <item>jixiang.com.myandroid.view.TestProgressBarActivity</item>
         <item>jixiang.com.myandroid.view.TestSeekBarActivity</item>
         <item>jixiang.com.myandroid.view.TestDateTimePickerActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestListViewActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestListViewArrayAdapter</item>
+        <item>jixiang.com.myandroid.adapterview.TestListViewSimpleAdapter</item>
+        <item>jixiang.com.myandroid.adapterview.TestListViewBaseAdapter</item>
+        <item>jixiang.com.myandroid.view.TestCarActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestLinearListViewActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestCarActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestAuctoCompletedTextView</item>
+        <item>jixiang.com.myandroid.adapterview.TestSpinnerActivity</item>
+        <item>jixiang.com.myandroid.adapterview.TestGridView</item>
+        <item>jixiang.com.myandroid.adapterview.TestGallery</item>
+        <item>jixiang.com.myandroid.adapterview.TestExpandableListView</item>
+        <item>jixiang.com.myandroid.dialog.TestDialogActivity</item>
+        <item>jixiang.com.myandroid.notification.TestNotificationActivity</item>
+        <item>jixiang.com.myandroid.exam.ExamActivity</item>
+        <item>jixiang.com.myandroid.menu.TestMenuActivity</item>
+        <item>jixiang.com.myandroid.activity.AActivity</item>
+        <item>jixiang.com.myandroid.activity.FirstActivity</item>
+        <item>jixiang.com.myandroid.intent.TestIntentAcitvity</item>
+        <item>jixiang.com.myandroid.fragment.TestFragment</item>
+        <item>jixiang.com.myandroid.viewpager.TestViewPager</item>
+        <item>jixiang.com.myandroid.viewpager.TestFragmentViewPager</item>
+        <item>jixiang.com.myandroid.animation.TestAnimation</item>
+        <item>jixiang.com.myandroid.animator.TestAnimatorActivity</item>
+        <item>jixiang.com.myandroid.touchevent.TestTouchEventA</item>
+        <item>jixiang.com.myandroid.canvas.TestMyClock</item>
+        <item>jixiang.com.myandroid.bitmap.TestBitmapFactory</item>
+        <item>jixiang.com.myandroid.bitmap.PreviewImageActivity</item>
+        <item>jixiang.com.myandroid.sharedpreferences.TestSharedPreferences</item>
+        <item>jixiang.com.myandroid.databases.TestDatabaseActivity</item>
+        <item>jixiang.com.myandroid.service.TestServiceActivity</item>
+        <item>jixiang.com.myandroid.webview.TestWebView</item>
+        <item>jixiang.com.myandroid.databaseexam.QQDinaryHome</item>
+        <item>jixiang.com.myandroid.json.ParseJSON</item>
+        <item>jixiang.com.myandroid.async.TestAsyncTask</item>
+        <item>jixiang.com.myandroid.network.GetWeather</item>
+        <item>jixiang.com.myandroid.network.TestDownImage</item>
+        <item>jixiang.com.myandroid.network.TestBitmapUtil</item>
 
     </string-array>
 </resources>
