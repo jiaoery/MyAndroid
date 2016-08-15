@@ -17,6 +17,7 @@
         <item>jixiang.com.myandroid.view.TestProgressBarActivity</item>
         <item>jixiang.com.myandroid.view.TestSeekBarActivity</item>
         <item>jixiang.com.myandroid.view.TestDateTimePickerActivity</item>
+        <item>jixiang.com.myandroid.view.TestStackView</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewActivity</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewArrayAdapter</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewSimpleAdapter</item>

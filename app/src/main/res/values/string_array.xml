@@ -17,6 +17,7 @@
         <item>ProgressBar</item>
         <item>SeekBar RatingBar</item>
         <item >Date Time picker</item>
+        <item>StackView(重叠图)</item>
         <item>ListView entries</item>
         <item>ListView ArrayAdapter</item>
         <item>ListView SimpleAdapter</item>

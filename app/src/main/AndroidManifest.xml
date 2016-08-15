@@ -55,6 +55,10 @@
         </activity>
         <activity android:name="jixiang.com.myandroid.view.TestDateTimePickerActivity" >
         </activity>
+        <activity android:name=".view.TestStackView">
+        </activity>
+
+
 
         <activity android:name="jixiang.com.myandroid.adapterview.TestListViewActivity" >
         </activity>
