@@ -18,6 +18,9 @@
         <item>SeekBar RatingBar</item>
         <item >Date Time picker</item>
         <item>StackView(重叠图)</item>
+        <item>ViewSwitcher(视图切换组件)</item>
+        <item>ImageSwitcher(图片切换组件)</item>
+        <item>TextSwitcher(文字切换组件)</item>
         <item>ListView entries</item>
         <item>ListView ArrayAdapter</item>
         <item>ListView SimpleAdapter</item>
@@ -26,10 +29,10 @@
         <item>HorizontalListView</item>
         <item>TestCarItem</item>
         <item>AutoCompleteTextView</item>
+        <item>ExpandableListView</item>
         <item>Spinner</item>
         <item>GridView</item>
         <item>Gallery</item>
-        <item>ExpandableListView</item>
         <item>Dialog (AlertDialog)</item>
         <item>Notification PopupWindow</item>
         <item>Exam</item>

@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:layout_margin="5dip">
 
-        <com.three.androidlearning.view.CircleView
+        <jixiang.com.myandroid.view.CircleView
             android:id="@+id/circle_view"
             android:layout_width="120dip"
             android:layout_height="120dip"

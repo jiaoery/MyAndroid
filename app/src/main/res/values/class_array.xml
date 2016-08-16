@@ -18,6 +18,9 @@
         <item>jixiang.com.myandroid.view.TestSeekBarActivity</item>
         <item>jixiang.com.myandroid.view.TestDateTimePickerActivity</item>
         <item>jixiang.com.myandroid.view.TestStackView</item>
+        <item>jixiang.com.myandroid.view.TestViewSwitcher</item>
+        <item>jixiang.com.myandroid.view.TestImageSwitcher</item>
+        <item>jixiang.com.myandroid.view.TestTextSwitcher</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewActivity</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewArrayAdapter</item>
         <item>jixiang.com.myandroid.adapterview.TestListViewSimpleAdapter</item>

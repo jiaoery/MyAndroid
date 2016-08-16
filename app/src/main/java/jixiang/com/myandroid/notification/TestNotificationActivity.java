@@ -100,7 +100,8 @@ public class TestNotificationActivity extends Activity implements OnClickListene
 		notification.flags |= Notification.FLAG_AUTO_CANCEL;
 		//notification.flags |= Notification.DEFAULT_SOUND;
 		notification.flags |= Notification.DEFAULT_LIGHTS;
-		notification.sound = Uri.parse("file:///sdcard/hai.mp3");
+		//设置声音
+//		notification.sound = Uri.parse("file:///sdcard/hai.mp3");
 		//点击后对应的操作
 //		//intent 表明点击之后将要执行的动作
 //		Intent intent = new Intent(this, TestButtonActivity.class);

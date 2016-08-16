@@ -57,8 +57,10 @@
         </activity>
         <activity android:name=".view.TestStackView">
         </activity>
-
-
+        <activity android:name=".view.TestViewSwitcher"/>
+        <activity android:name=".view.TestImageSwitcher"/>
+        <activity android:name=".view.TestTextSwitcher">
+        </activity>
 
         <activity android:name="jixiang.com.myandroid.adapterview.TestListViewActivity" >
         </activity>
