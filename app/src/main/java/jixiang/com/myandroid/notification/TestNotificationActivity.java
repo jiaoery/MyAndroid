@@ -26,6 +26,7 @@ import android.widget.PopupWindow;
 import android.widget.RemoteViews;
 
 import jixiang.com.myandroid.R;
+import jixiang.com.myandroid.networkbitmap.SystemBase;
 import jixiang.com.myandroid.view.TestButtonActivity;
 
 public class TestNotificationActivity extends Activity implements OnClickListener{
@@ -90,33 +91,59 @@ public class TestNotificationActivity extends Activity implements OnClickListene
 	}
 	
 	
-	public void showNotification(){
-		//先生成一个通知
-		Notification notification = new Notification();
-		notification.tickerText = "网络连接中断";
-		notification.icon = R.drawable.a011;
-		notification.when = System.currentTimeMillis();
-		//设置属性
-		notification.flags |= Notification.FLAG_AUTO_CANCEL;
-		//notification.flags |= Notification.DEFAULT_SOUND;
-		notification.flags |= Notification.DEFAULT_LIGHTS;
-		//设置声音
+//	public void showNotification(){
+//		//先生成一个通知
+//		Notification notification = new Notification();
+//		notification.tickerText = "网络连接中断";
+//		notification.icon = R.drawable.a011;
+//		notification.when = System.currentTimeMillis();
+//		//设置属性
+//		notification.flags |= Notification.FLAG_AUTO_CANCEL;
+//		//notification.flags |= Notification.DEFAULT_SOUND;
+//		notification.flags |= Notification.DEFAULT_LIGHTS;
 //		notification.sound = Uri.parse("file:///sdcard/hai.mp3");
-		//点击后对应的操作
+//		//点击后对应的操作
 //		//intent 表明点击之后将要执行的动作
 //		Intent intent = new Intent(this, TestButtonActivity.class);
 //		//intent.setAction(Settings.ACTION_WIFI_SETTINGS);
-//		PendingIntent pendingIntent = PendingIntent.getActivity(this, 123, intent,Intent.FLAG_ACTIVITY_NEW_TASK);
-//		notification.bu
+//		PendingIntent pendingIntent = PendingIntent.getActivity(this, 123, intent, Intent.FLAG_ACTIVITY_NEW_TASK);
 //		notification.setLatestEventInfo(this, "当前网络连接中断", "网络不可用，请设置网络", pendingIntent);
-		//显示通知
-		manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		Object object = getSystemService(Context.NOTIFICATION_SERVICE);
-		if(object instanceof NotificationManager) {
-			manager = (NotificationManager) object;
-		}
-		manager.notify(NOTIFICATION_ID1, notification);
+//		//显示通知
+//		manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//		Object object = getSystemService(Context.NOTIFICATION_SERVICE);
+//		if(object instanceof NotificationManager) {
+//			manager = (NotificationManager) object;
+//		}
+//		manager.notify(NOTIFICATION_ID1, notification);
+//	}
+
+	public void showNotification(){
+//		intent 表明点击之后将要执行的动作
+		Intent intent = new Intent(this, TestButtonActivity.class);
+		//intent.setAction(Settings.ACTION_WIFI_SETTINGS);
+		PendingIntent pendingIntent = PendingIntent.getActivity(this, 123, intent, 0);
+		Notification notification=new Notification.Builder(this)
+				//设置打开通知，该通知自动消失
+		        .setAutoCancel(true)
+				//设置显示在状态栏的通知提示消息
+		       .setTicker("当前网络连接中断:网络不可用，请设置网络")
+				//设置通知的图标
+		       .setSmallIcon(R.drawable.a011)
+				//设置通知内容的标题
+		       .setContentTitle("当前网络连接中断")
+				//设置通知的内容
+		       .setContentText("网络不可用，请设置网络")
+				//设置提示的声音.led灯
+		       .setDefaults(Notification.DEFAULT_SOUND)
+				//设置时间
+		       .setWhen(System.currentTimeMillis())
+				//设置点击通知时打开的activity
+		       .setContentIntent(pendingIntent)
+				.build();
+		manager= (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+		manager.notify(NOTIFICATION_ID1,notification);
 	}
+
 	public void cancelNotification(int id){
 		manager.cancel(id);
 	}
