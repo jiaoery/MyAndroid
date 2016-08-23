@@ -16,7 +16,7 @@ import jixiang.com.myandroid.R;
 public class CircleView extends View {
 	public int width;
 	public int height;
-	public int max = 10; //共总的停车位
+	public int max = 10; //总共的停车位
 	public int rest = 3;//剩下的停车位
 	Paint paint; //画笔
 	int innerRadius; //内圈的半径
@@ -36,8 +36,12 @@ public class CircleView extends View {
 		this.rest = rest;
 		invalidate();
 	}
-	
-	
+
+	/**
+	 * 测量控件所需的高度和宽度4
+	 * @param widthMeasureSpec
+	 * @param heightMeasureSpec
+     */
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 		if(widthMeasureSpec == MeasureSpec.AT_MOST) {
@@ -50,7 +54,15 @@ public class CircleView extends View {
 		System.out.println("widthMeasureSpec="+ widthMeasureSpec + ", heightMeasureSpec=" + heightMeasureSpec);
 		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
 	}
-	
+
+	/**
+	 * 当布局大小改变时回调该方法
+	 * @param changed
+	 * @param left
+	 * @param top
+	 * @param right
+     * @param bottom
+     */
 	@Override
 	protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
 		super.onLayout(changed, left, top, right, bottom);
