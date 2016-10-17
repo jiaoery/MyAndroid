@@ -8,6 +8,6 @@
         android:id="@+id/myfragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.three.androidlearning.fragment.FragmentAsView"/>
+        class="jixiang.com.myandroid.fragment.FragmentAsView"/>
 
 </LinearLayout>

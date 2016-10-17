@@ -127,7 +127,7 @@ public class TestDatabaseActivity extends FragmentActivity implements OnClickLis
 		}
 		cursor.close(); //关闭游标*/
 		Uri uri = StudentProvider.STUDENT_URI;
-		String MIMEString = getContentResolver().getType(uri); //vnd.android.cursor.dir/com.three.androidlearning
+		String MIMEString = getContentResolver().getType(uri); //vnd.android.cursor.dir/jixiang.com.myandroid
 		Cursor cursor = getContentResolver().query(uri, null, null, null, null);
 		if(cursor != null && cursor.getCount() > 0) {
 			//cursor.moveToPrevious(); //移动到上一条记录, 在这里执行的时候，是没有用的,因为已经在表头了

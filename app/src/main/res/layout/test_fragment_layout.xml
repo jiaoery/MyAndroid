@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        class="com.three.androidlearning.fragment.QQBottomFragment" />
+        class="jixiang.com.myandroid.fragment.QQBottomFragment" />
 
     <FrameLayout
         android:id="@+id/content"

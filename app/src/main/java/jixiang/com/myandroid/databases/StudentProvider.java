@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 public class StudentProvider extends ContentProvider{
-	public static final String AUTHORITY = "com.three.androidlearning.student";
+	public static final String AUTHORITY = "jixiang.com.myandroid.student";
 	private MyOpenHelper helper; //创建数据库
 	private SQLiteDatabase studentDb; //数据库
 	
@@ -53,9 +53,9 @@ public class StudentProvider extends ContentProvider{
 		// uriMatcher.match(Uri.parse("content://com.three.androidlearning.student/student/12"))  ==2 (STUDENT_ID)
 		switch(uriMatcher.match(uri)) {
 		case STUDENTS:
-			return "vnd.android.cursor.dir/com.three.androidlearning"; //自定义的一个MIME类型，表明是一张数据表
+			return "vnd.android.cursor.dir/jixiang.com.myandroid"; //自定义的一个MIME类型，表明是一张数据表
 		case STUDENT_ID:
-			return "vnd.android.cursor.item/com.three.androidlearning"; //表明是一条记录
+			return "vnd.android.cursor.item/jixiang.com.myandroid"; //表明是一条记录
 		}
 		return null;
 	}
