@@ -49,6 +49,6 @@
         <item>peach</item>
         <item>pear</item>
     </string-array>
-    
+
     <string name="activity_as_dialog">Activity做Dialog</string>
 </resources>
