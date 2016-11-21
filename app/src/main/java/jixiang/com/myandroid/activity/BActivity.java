@@ -58,7 +58,10 @@ public class BActivity extends Activity {
 			return true;
 		}
 	});
-	
+
+	/**
+	 * 内部类
+	 */
 	class MyThread extends Thread {
 		long n;
 
@@ -74,6 +77,8 @@ public class BActivity extends Activity {
 			handler.sendMessageDelayed(message, 1000);
 		}
 	}
+
+
 	// 递归求斐波拉契数列的值
 	public long fab(long n) {
 		if (n == 0) {

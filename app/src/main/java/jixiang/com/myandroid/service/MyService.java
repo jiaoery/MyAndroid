@@ -6,12 +6,18 @@ import android.os.Binder;
 import android.os.IBinder;
 
 public class MyService extends Service{
-	
+
+	//自定义接口
 	public static interface OnGetSumListener{
 		void onGetSum(long sum);
 	}
 
 	OnGetSumListener listener;
+
+	/**
+	 * 向外部公开的listener设置方法
+	 * @param listener  设置监听方法
+     */
 	public void setOnGetSumListener(OnGetSumListener listener) {
 		this.listener = listener;
 		new MyThread(n).start(); //设置了监听之后，才开始计算

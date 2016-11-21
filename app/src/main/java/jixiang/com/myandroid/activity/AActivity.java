@@ -30,6 +30,10 @@ public class AActivity extends Activity{
 			}
 		});
 	}
+
+	/**
+	 * 将输入框中的值传给另一个activity
+	 */
 	public void send(){
 		String str = input.getText().toString();
 		if(str != null && !str.equals("")) {

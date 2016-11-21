@@ -23,7 +23,9 @@ import android.widget.TextView;
 
 import jixiang.com.myandroid.R;
 
-
+/**
+ * 测试数据库
+ */
 public class TestDatabaseActivity extends FragmentActivity implements OnClickListener{
 	
 	SQLiteDatabase database;
@@ -66,7 +68,8 @@ public class TestDatabaseActivity extends FragmentActivity implements OnClickLis
 		//注册观察者
 		getContentResolver().registerContentObserver(uri, true, contentObserver);
 	}
-	
+
+	//获取最大行id
 	public void getMaxRowId(){
 		Cursor cursor = database.query(MyOpenHelper.TABEL_STUDENT, new String[]{" max(sid) as max_sid"}, null, null, null, null, null);
 		if(cursor != null && cursor.getCount() > 0) {

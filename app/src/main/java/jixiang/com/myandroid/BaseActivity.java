@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.WindowManager;
 
 public abstract class BaseActivity extends FragmentActivity{
 	//自定义的退出程序的广播
@@ -19,6 +21,7 @@ public abstract class BaseActivity extends FragmentActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTranslucentStatus();
 		exitReceiver = new MyReceiver();
 		networkStatusChange = new OnNetworkStatusChange() {
 			
@@ -31,6 +34,24 @@ public abstract class BaseActivity extends FragmentActivity{
 		filter.addAction(EXIT_ACTION);
 		filter.addAction(NETWORK_CHANGE);
 		registerReceiver(exitReceiver, filter); //注册广播接收器
+	}
+
+	// 需要setContentView之前调用
+	private void setTranslucentStatus() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			// 透明状态栏
+			getWindow().addFlags(
+					WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//			 透明导航栏
+//			getWindow().addFlags(
+//					WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+			SystemStatusManager tintManager = new SystemStatusManager(this);
+			tintManager.setStatusBarTintEnabled(true);
+			// 设置状态栏的颜色
+			tintManager.setStatusBarTintResource(R.color.red);
+			getWindow().getDecorView().setFitsSystemWindows(true);
+
+		}
 	}
 	
 	
