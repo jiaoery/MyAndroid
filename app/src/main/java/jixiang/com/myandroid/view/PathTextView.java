@@ -41,17 +41,20 @@ public class PathTextView extends TextView{
 //    }
 
     /**
-     * 初始化部分数据
+     * 初始化数据
      */
     private void init() {
         paths[0]=new Path();
+        //初始path位置
         paths[0].moveTo(0,0);
         for(int i=1;i<=20;i++){
             //随机生成20个点，并且将其连接成一条Path线
             paths[0].lineTo(i*30, (float) (Math.random()*30));
         }
         paths[1]=new Path();
+        //形成一个矩形框
         RectF rectF=new RectF(0,0,600,360);
+        //添加一个椭圆形，以逆时针方向绘制
         paths[1].addOval(rectF,Path.Direction.CCW);
         paths[2]=new Path();
         paths[2].addArc(rectF,60,180);
@@ -65,6 +68,7 @@ public class PathTextView extends TextView{
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.drawColor(Color.WHITE);
+        //移动画笔
         canvas.translate(40,40);
         //设置从右边开始绘制（右对齐）
         paint.setTextAlign(Paint.Align.RIGHT);
@@ -78,6 +82,14 @@ public class PathTextView extends TextView{
         canvas.drawTextOnPath(DRAW_STR,paths[0],-8,20,paint);
         //对canvas进行坐标变换，画布下移60
         canvas.translate(0,60);
+        // 绘制路径
+        paint.setStyle(Paint.Style.STROKE);
+        canvas.drawPath(paths[1], paint);
+        // 沿着路径绘制一段文本
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawTextOnPath(DRAW_STR, paths[1], -20, 20, paint);
+        // 对Canvas进行坐标变换： 画布下移360
+        canvas.translate(0, 360);
         //绘制路径
         paint.setStyle(Paint.Style.STROKE);
         canvas.drawPath(paths[2],paint);
