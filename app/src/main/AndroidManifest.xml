@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="jixiang.com.myandroid">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,111 +17,69 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".layout.TestLinearLayout"
-            android:label="@string/test_linearlayout"/>
-
-        <activity android:name=".layout.TestGridLayout"/>
-
-        <activity android:name=".layout.TestFrameLayout"
-            android:label="@string/test_framelayout"/>
-
-        <activity android:name=".layout.TestRelativeLayoutActivity"
-            android:label="@string/test_relativelayout"/>
-
-        <activity android:name=".layout.TestTableLayout"
-            android:label="@string/test_tablelayout"/>
-
-        <activity android:name=".layout.StepRelativeLayoutActivity"
-            android:label="@string/steps_stair"/>
-
-
-        <activity android:name="jixiang.com.myandroid.view.TestTextViewActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestButtonActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestEditTextActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestImageViewActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestTabActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestRadioCheckActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestProgressBarActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestSeekBarActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestDateTimePickerActivity" >
-        </activity>
-        <activity android:name=".view.TestStackView">
-        </activity>
-        <activity android:name=".view.TestViewSwitcher"/>
-        <activity android:name=".view.TestImageSwitcher"/>
-        <activity android:name=".view.TestTextSwitcher">
-        </activity>
-
-        <activity android:name="jixiang.com.myandroid.adapterview.TestListViewActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestListViewArrayAdapter" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestListViewSimpleAdapter" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestListViewBaseAdapter" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.view.TestCarActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestLinearListViewActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestCarActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestAuctoCompletedTextView" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestSpinnerActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestGridView" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestGallery" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.adapterview.TestExpandableListView" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.dialog.TestDialogActivity" >
-        </activity>
         <activity
-            android:name="jixiang.com.myandroid.dialog.ActivityAsDialog"
+            android:name=".layout.TestLinearLayout"
+            android:label="@string/test_linearlayout" />
+        <activity android:name=".layout.TestGridLayout" />
+        <activity
+            android:name=".layout.TestFrameLayout"
+            android:label="@string/test_framelayout" />
+        <activity
+            android:name=".layout.TestRelativeLayoutActivity"
+            android:label="@string/test_relativelayout" />
+        <activity
+            android:name=".layout.TestTableLayout"
+            android:label="@string/test_tablelayout" />
+        <activity
+            android:name=".layout.StepRelativeLayoutActivity"
+            android:label="@string/steps_stair" />
+        <activity android:name=".view.TestTextViewActivity"></activity>
+        <activity android:name=".view.TestButtonActivity"></activity>
+        <activity android:name=".view.TestEditTextActivity"></activity>
+        <activity android:name=".view.TestImageViewActivity"></activity>
+        <activity android:name=".view.TestTabActivity"></activity>
+        <activity android:name=".view.TestRadioCheckActivity"></activity>
+        <activity android:name=".view.TestProgressBarActivity"></activity>
+        <activity android:name=".view.TestSeekBarActivity"></activity>
+        <activity android:name=".view.TestDateTimePickerActivity"></activity>
+        <activity android:name=".view.TestStackView"></activity>
+        <activity android:name=".view.TestViewSwitcher" />
+        <activity android:name=".view.TestImageSwitcher" />
+        <activity android:name=".view.TestTextSwitcher"></activity>
+        <activity android:name=".adapterview.TestListViewActivity"></activity>
+        <activity android:name=".adapterview.TestListViewArrayAdapter"></activity>
+        <activity android:name=".adapterview.TestListViewSimpleAdapter"></activity>
+        <activity android:name=".adapterview.TestListViewBaseAdapter"></activity>
+        <activity android:name=".view.TestCarActivity"></activity>
+        <activity android:name=".adapterview.TestLinearListViewActivity"></activity>
+        <activity android:name=".adapterview.TestCarActivity"></activity>
+        <activity android:name=".adapterview.TestAuctoCompletedTextView"></activity>
+        <activity android:name=".adapterview.TestSpinnerActivity"></activity>
+        <activity android:name=".adapterview.TestGridView"></activity>
+        <activity android:name=".adapterview.TestGallery"></activity>
+        <activity android:name=".adapterview.TestExpandableListView"></activity>
+        <activity android:name=".dialog.TestDialogActivity"></activity>
+        <activity
+            android:name=".dialog.ActivityAsDialog"
             android:label="@string/activity_as_dialog"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.notification.TestNotificationActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.exam.ExamActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.exam.ShowTimeActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.exam.ShowListViewActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.exam.ShowGridActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.menu.TestMenuActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.activity.AActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.activity.BActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.activity.FirstActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.activity.SecondActivity" >
-        </activity>
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"></activity>
+        <activity android:name=".notification.TestNotificationActivity"></activity>
+        <activity android:name=".exam.ExamActivity"></activity>
+        <activity android:name=".exam.ShowTimeActivity"></activity>
+        <activity android:name=".exam.ShowListViewActivity"></activity>
+        <activity android:name=".exam.ShowGridActivity"></activity>
+        <activity android:name=".menu.TestMenuActivity"></activity>
+        <activity android:name=".activity.AActivity"></activity>
+        <activity android:name=".activity.BActivity"></activity>
+        <activity android:name=".activity.FirstActivity"></activity>
+        <activity android:name=".activity.SecondActivity"></activity>
         <activity
-            android:name="jixiang.com.myandroid.activity.TransparentActivity"
-            android:theme="@style/TransparentActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.intent.TestIntentAcitvity" >
-        </activity>
+            android:name=".activity.TransparentActivity"
+            android:theme="@style/TransparentActivity"></activity>
+        <activity android:name=".intent.TestIntentAcitvity"></activity>
         <activity
-            android:name="jixiang.com.myandroid.intent.ActionActivity"
-            android:label="ActionActivity" >
+            android:name=".intent.ActionActivity"
+            android:label="ActionActivity">
             <intent-filter>
                 <action android:name="com.three.android.see" />
 
@@ -130,8 +88,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="jixiang.com.myandroid.intent.ActionActivity1"
-            android:label="ActionActivity1" >
+            android:name=".intent.ActionActivity1"
+            android:label="ActionActivity1">
             <intent-filter>
                 <action android:name="com.three.android.see" />
 
@@ -139,84 +97,56 @@
                 <category android:name="com.three.android.mycategory" />
             </intent-filter>
         </activity>
-        <activity android:name="jixiang.com.myandroid.fragment.FragmentLayout" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.fragment.DetailsActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.fragment.TestFragment" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.fragment.TestFragmentAsView" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.fragment.TestFragmentManager" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.viewpager.TestViewPager" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.viewpager.TestFragmentViewPager" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestTranslate" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestAnimation" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestRotate" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestAnimationSet" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestScaleAnimation" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestAlphaAnimation" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animation.TestFrameAnimation" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animator.TestAnimatorActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animator.XmlAnimatorActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animator.TestObjectAnimatorAcitivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.animator.TestAnimatorSet" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.touchevent.TestTouchEventA" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.canvas.TestMyClock" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.bitmap.TestBitmapFactory" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.bitmap.PreviewImageActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.sharedpreferences.TestSharedPreferences" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.databases.TestDatabaseActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.service.TestServiceActivity" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.webview.TestWebView" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.webview.LoadLocalHtml" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.webview.LoadJSAndJSInterface" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.webview.GetImageUrl" ></activity>
-        <activity android:name="jixiang.com.myandroid.webview.LoginCSDN" ></activity>
+        <activity android:name=".fragment.FragmentLayout"></activity>
+        <activity android:name=".fragment.DetailsActivity"></activity>
+        <activity android:name=".fragment.TestFragment"></activity>
+        <activity android:name=".fragment.TestFragmentAsView"></activity>
+        <activity android:name=".fragment.TestFragmentManager"></activity>
+        <activity android:name=".viewpager.TestViewPager"></activity>
+        <activity android:name=".viewpager.TestFragmentViewPager"></activity>
+        <activity android:name=".animation.TestTranslate"></activity>
+        <activity android:name=".animation.TestAnimation"></activity>
+        <activity android:name=".animation.TestRotate"></activity>
+        <activity android:name=".animation.TestAnimationSet"></activity>
+        <activity android:name=".animation.TestScaleAnimation"></activity>
+        <activity android:name=".animation.TestAlphaAnimation"></activity>
+        <activity android:name=".animation.TestFrameAnimation"></activity>
+        <activity android:name=".animator.TestAnimatorActivity"></activity>
+        <activity android:name=".animator.XmlAnimatorActivity"></activity>
+        <activity android:name=".animator.TestObjectAnimatorAcitivity"></activity>
+        <activity android:name=".animator.TestAnimatorSet"></activity>
+        <activity android:name=".touchevent.TestTouchEventA"></activity>
+        <activity android:name=".canvas.TestMyClock"></activity>
+        <activity android:name=".bitmap.TestBitmapFactory"></activity>
+        <activity android:name=".bitmap.PreviewImageActivity"></activity>
+        <activity android:name=".sharedpreferences.TestSharedPreferences"></activity>
+        <activity android:name=".databases.TestDatabaseActivity"></activity>
+        <activity android:name=".service.TestServiceActivity"></activity>
+        <activity android:name=".webview.TestWebView"></activity>
+        <activity android:name=".webview.LoadLocalHtml"></activity>
+        <activity android:name=".webview.LoadJSAndJSInterface"></activity>
+        <activity android:name=".webview.GetImageUrl" />
+        <activity android:name=".webview.LoginCSDN" />
         <activity
-            android:name="jixiang.com.myandroid.databaseexam.QQDinaryHome"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
-        </activity>
-        <activity android:name="jixiang.com.myandroid.databaseexam.QQDinaryWrite"
+            android:name=".databaseexam.QQDinaryHome"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
-        <activity android:name="jixiang.com.myandroid.databaseexam.QQDinaryView"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
-        <activity android:name="jixiang.com.myandroid.json.ParseJSON"></activity>
-        <activity android:name="jixiang.com.myandroid.async.TestAsyncTask"></activity>
-        <activity android:name="jixiang.com.myandroid.network.GetWeather"></activity>
-        <activity android:name="jixiang.com.myandroid.network.TestDownImage"></activity>
-        <activity android:name="jixiang.com.myandroid.network.TestBitmapUtil"></activity>
+        <activity
+            android:name=".databaseexam.QQDinaryWrite"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name=".databaseexam.QQDinaryView"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity android:name=".json.ParseJSON" />
+        <activity android:name=".async.TestAsyncTask" />
+        <activity android:name=".network.GetWeather" />
+        <activity android:name=".network.TestDownImage" />
+        <activity android:name=".network.TestBitmapUtil" />
 
         <receiver
-            android:name="jixiang.com.myandroid.canvas.ClockWidgetProvider"
-            android:label="Clock Widget" >
+            android:name=".canvas.ClockWidgetProvider"
+            android:label="Clock Widget">
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" >
-                </action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
             </intent-filter>
             <!-- 指定widget的配置文件路径 -->
             <meta-data
@@ -225,8 +155,8 @@
         </receiver>
 
         <service
-            android:name="jixiang.com.myandroid.canvas.LiveWallpaper"
-            android:permission="android.permission.BIND_WALLPAPER" >
+            android:name=".canvas.LiveWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
 
             <!-- 为实时壁纸配置intent-filter -->
             <intent-filter>
@@ -239,31 +169,35 @@
         </service>
 
         <provider
-            android:name="jixiang.com.myandroid.databases.StudentProvider"
+            android:name=".databases.StudentProvider"
             android:authorities="jixiang.com.myandroid.student"
             android:exported="true"
             android:readPermission="jixiang.com.myandroid.read_student"
-            android:writePermission="jixiang.com.myandroid.write_student" >
-        </provider>
+            android:writePermission="jixiang.com.myandroid.write_student"></provider>
 
-        <service android:name="jixiang.com.myandroid.service.MyService" >
-        </service>
+        <service android:name=".service.MyService"></service>
         <service
-            android:name="jixiang.com.myandroid.service.MyService1"
-            android:exported="true" >
-        </service>
+            android:name=".service.MyService1"
+            android:exported="true"></service>
 
-        <receiver android:name="jixiang.com.myandroid.broadcast.BootBroadcastReceiver" >
+        <receiver android:name=".broadcast.BootBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="jixiang.com.myandroid.broadcast.NetworkReceiver" >
+        <receiver android:name=".broadcast.NetworkReceiver">
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
-                </action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"></action>
             </intent-filter>
         </receiver>
+
+        <!-- 配置contentprovider 其中authorities为地址参数 name为实现provider的类名 export 制定了是否允许被其他app调用 -->
+        <provider
+            android:name=".contentprovider.FirstProvider"
+            android:authorities="jixiang.com.myandroid.first"
+            android:exported="true" />
+
+        <activity android:name=".contentprovider.TestProvider"></activity>
     </application>
 
 </manifest>

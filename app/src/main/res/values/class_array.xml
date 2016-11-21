@@ -59,6 +59,7 @@
         <item>jixiang.com.myandroid.network.GetWeather</item>
         <item>jixiang.com.myandroid.network.TestDownImage</item>
         <item>jixiang.com.myandroid.network.TestBitmapUtil</item>
+        <item>jixiang.com.myandroid.contentprovider.TestProvider</item>
 
     </string-array>
 </resources>

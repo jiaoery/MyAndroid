@@ -59,6 +59,7 @@
         <item>GetWeather</item>
         <item>DownLoad Image</item>
         <item>TestBitmapUtil</item>
+        <item>TestProvider(基本contentprovider理解)</item>
         
     </string-array>
 </resources>
