@@ -19,15 +19,15 @@
 详细点可以看代码和参考google提供的官方文档http://www.android-doc.com/reference/android/widget/package-summary.html
 #2.控件篇
   在日常的开发中经常会使用到各种各样的控件，这里有一些现在最基础或者非常流行的控件
-  *Textview ：文字展示最常见的控件
-  *Button: 按钮控件 设置onclicklistener来设置点击事件
-  *EditText：可编辑输入框，用于输入文字和修改文字内容
-  *ImageView:用于图片展示最常用到的控件
-  *Tab :顶部的引导栏，常用用于顶部分页菜单功能
-  *RadioButton和CheckBox：单项选择和多项选择选择栏
-  *ProgressBar,SeekBar,RatingBar:分别为进度条，滑动条，星状条
-  *picker ：选择工具，常用与时间和日期的选择
-  *switcher：重叠图
-  *ListView，GridView：列表视图和网格视图
-  *自定义view基础：实例car
+  * Textview ：文字展示最常见的控件
+  * Button: 按钮控件 设置onclicklistener来设置点击事件
+  * EditText：可编辑输入框，用于输入文字和修改文字内容
+  * ImageView:用于图片展示最常用到的控件
+  * Tab :顶部的引导栏，常用用于顶部分页菜单功能
+  * RadioButton和CheckBox：单项选择和多项选择选择栏
+  * ProgressBar,SeekBar,RatingBar:分别为进度条，滑动条，星状条
+  * picker ：选择工具，常用与时间和日期的选择
+  * switcher：重叠图
+  * ListView，GridView：列表视图和网格视图
+  * 自定义view基础：实例car
   
