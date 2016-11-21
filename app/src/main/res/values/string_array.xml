@@ -26,6 +26,7 @@
         <item>ListView SimpleAdapter</item>
         <item>ListView BaseAdapter</item>
         <item>TestCar</item>
+        <item>TestPathTextView</item>
         <item>HorizontalListView</item>
         <item>TestCarItem</item>
         <item>AutoCompleteTextView</item>
