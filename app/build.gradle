@@ -38,4 +38,5 @@ dependencies {
     android {
         useLibrary 'org.apache.http.legacy'
     }
+    compile 'com.orhanobut:logger:1.8'
 }

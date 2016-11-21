@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.orhanobut.logger.Logger;
+
 import jixiang.com.myandroid.R;
 
 public class FirstActivity extends Activity implements OnClickListener{
@@ -14,7 +16,7 @@ public class FirstActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		System.out.println("FirstActivity----->onCreate");
+		Logger.d("FirstActivity----->onCreate");
 		setContentView(R.layout.first_layout);
 		findViewById(R.id.pause).setOnClickListener(this);
 		findViewById(R.id.pause_stop).setOnClickListener(this);
@@ -38,30 +40,30 @@ public class FirstActivity extends Activity implements OnClickListener{
 	@Override
 	protected void onStart() {
 		super.onStart();
-		System.out.println("FirstActivity----->onStart");
+		Logger.d("FirstActivity----->onStart");
 	}
 	
 	@Override
 	protected void onResume() {
 		super.onResume();
-		System.out.println("FirstActivity----->onResume");
+		Logger.d("FirstActivity----->onResume");
 	}
 	
 	@Override
 	protected void onPause() {
 		super.onPause();
-		System.out.println("FirstActivity----->onPause");
+		Logger.d("FirstActivity----->onPause");
 	}
 	
 	@Override
 	protected void onStop() {
 		super.onStop();
-		System.out.println("FirstActivity----->onStop");
+		Logger.d("FirstActivity----->onStop");
 	}
 	
 	@Override
 	protected void onRestart() {
 		super.onRestart();
-		System.out.println("FirstActivity----->onRestart");
+		Logger.d("FirstActivity----->onRestart");
 	}
 }
