@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -76,7 +81,7 @@
         <activity android:name=".activity.SecondActivity" />
         <activity
             android:name=".activity.TransparentActivity"
-            android:theme="@style/TransparentActivity"></activity>
+            android:theme="@style/TransparentActivity" />
         <activity android:name=".intent.TestIntentAcitvity" />
         <activity
             android:name=".intent.ActionActivity"
@@ -199,7 +204,9 @@
             android:exported="true" />
 
         <activity android:name=".contentprovider.TestProvider" />
-        <activity android:name=".view.TestPathTextView"></activity>
+        <activity android:name=".view.TestPathTextView" />
+        <activity android:name=".exam.TestDownloadManager"></activity>
+
     </application>
 
 </manifest>
