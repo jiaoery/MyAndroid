@@ -220,6 +220,13 @@
         <activity android:name=".view.TestPathTextView" />
         <activity android:name=".exam.TestDownloadManager"></activity>
 
+        <!--开机自启动的reciever-->
+        <receiver android:name=".reciver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
