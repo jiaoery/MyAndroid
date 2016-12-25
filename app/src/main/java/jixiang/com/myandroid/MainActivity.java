@@ -22,13 +22,14 @@ import butterknife.InjectView;
 import butterknife.OnEditorAction;
 import butterknife.OnItemClick;
 import jixiang.com.myandroid.adapter.MainAdapter;
+import jixiang.com.myandroid.view.OverScrollListView;
 
 public class MainActivity extends BaseActivity {
 
     @InjectView(R.id.auto_completedtextview)
     AutoCompleteTextView autoCompletedtextview;
     @InjectView(R.id.listview)
-    ListView listview;
+    OverScrollListView listview;
 
 
     Map<String,String> map=new HashMap<>();

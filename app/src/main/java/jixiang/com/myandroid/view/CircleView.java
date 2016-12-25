@@ -34,6 +34,7 @@ public class CircleView extends View {
 	public void setRestAndMax(int rest, int max){
 		this.max = max;
 		this.rest = rest;
+		//重新绘制视图
 		invalidate();
 	}
 
