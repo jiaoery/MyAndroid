@@ -21,6 +21,7 @@
         <item>ViewSwitcher(视图切换组件)</item>
         <item>ImageSwitcher(图片切换组件)</item>
         <item>TextSwitcher(文字切换组件)</item>
+        <item>TestSweepView</item>
         <item>ListView entries</item>
         <item>ListView ArrayAdapter</item>
         <item>ListView SimpleAdapter</item>
