@@ -5,6 +5,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.orhanobut.logger.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,6 +44,7 @@ public class MainActivity extends BaseActivity {
         //ButterKnife 用于快速集成xml到activity中
         ButterKnife.inject(this);
         init();
+        initDisplayMessage();
     }
 
     private void init() {
@@ -115,6 +119,17 @@ public class MainActivity extends BaseActivity {
                 jump(toclass);
             }
         }
+
+    }
+
+    /**
+     * 获取使用的手机设备屏幕信息
+     */
+    private void initDisplayMessage(){
+        DisplayMetrics displayMetrics=new DisplayMetrics();
+        //获取屏幕的windowsmanager，并将设备屏幕信息储存在displayMetrics下
+        getWindow().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        Logger.d(displayMetrics.toString());
 
     }
 }
