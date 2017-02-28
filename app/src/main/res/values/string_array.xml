@@ -63,6 +63,7 @@
         <item>TestBitmapUtil</item>
         <item>TestProvider(基本contentprovider理解)</item>
         <item>TestDownloadManager</item>
+        <item>TestDrawableActivity</item>
         
     </string-array>
 </resources>

@@ -9,21 +9,18 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" /> <!-- 添加访问网络权限 -->
     <!-- 读写SD卡权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <permission android:name="jixiang.com.myandroid.write_student" >
-    </permission>
-    <permission android:name="jixiang.com.myandroid.read_student" >
-    </permission>
+    <permission android:name="jixiang.com.myandroid.write_student" />
+    <permission android:name="jixiang.com.myandroid.read_student" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
-    <!--get bootcomplete actions permission-->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- get bootcomplete actions permission -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:name=".MyApplication"
@@ -221,20 +218,29 @@
 
         <activity android:name=".contentprovider.TestProvider" />
         <activity android:name=".view.TestPathTextView" />
-        <activity android:name=".exam.TestDownloadManager"></activity>
+        <activity android:name=".exam.TestDownloadManager" />
 
-        <!--开机自启动的reciever   adb shell am broadcast -android.intent.action.BOOT_COMPLETED-->
+        <!-- 开机自启动的reciever   adb shell am broadcast -android.intent.action.BOOT_COMPLETED -->
         <receiver android:name=".reciver.BootCompletedReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <category android:name="android.intent.category.HOME"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".view.TestSweepView"/>
+        <activity android:name=".view.TestSweepView" />
 
+        <!-- 各种drawable解析 -->
+        <activity android:name=".drawable.TestDrawableActivity" />
+        <activity android:name=".drawable.TestBitmapDrawable" />
+        <activity android:name=".drawable.TestLayerDrawable" />
+        <activity android:name=".drawable.TestStateListDrawable" />
+        <activity android:name=".drawable.TestLevelListDrawable" />
+        <activity android:name=".drawable.TestTransitionDrawable" />
+        <activity android:name=".drawable.TestInsertDrawable" />
+        <activity android:name=".drawable.TestClipDrawable" />
+        <activity android:name=".drawable.TestSelfDrawable"></activity>
     </application>
-
-
 
 </manifest>

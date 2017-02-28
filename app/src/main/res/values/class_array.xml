@@ -63,6 +63,7 @@
         <item>jixiang.com.myandroid.network.TestBitmapUtil</item>
         <item>jixiang.com.myandroid.contentprovider.TestProvider</item>
         <item>jixiang.com.myandroid.exam.TestDownloadManager</item>
+        <item>jixiang.com.myandroid.drawable.TestDrawableActivity</item>
 
     </string-array>
 </resources>

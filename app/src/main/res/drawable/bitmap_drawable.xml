@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/a005"
+    android:tileMode="mirror"
+    android:antialias="true"
+    android:dither="true"
+    >
+    <!--titleMode :重复模式
+        antialias:抗锯齿
+        dither：晃动效果
+    -->
+
+</bitmap>

@@ -13,7 +13,7 @@ import jixiang.com.myandroid.R;
 
 /**
  * Created by zn on 2016/12/25.
- * 具有弹性的
+ * 具有弹性的listview
  */
 
 public class OverScrollListView extends ListView {

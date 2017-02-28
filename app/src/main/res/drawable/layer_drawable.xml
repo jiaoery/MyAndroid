@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--图片1-->
+    <item android:drawable="@drawable/a005"/>
+
+    <!--图片2-->
+    <item android:drawable="@drawable/ic_launcher"
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp"/>
+
+</layer-list>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_level_list_drawable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/level_list_drawable" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:background="@drawable/state_list_drawable"
+        android:text="+10"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_plus"
+        android:background="@drawable/state_list_drawable"
+        android:text="-10"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

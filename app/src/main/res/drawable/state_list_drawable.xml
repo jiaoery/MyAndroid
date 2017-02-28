@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--未被点击的状态-->
+    <item android:state_pressed="false">
+        <!--矩形-->
+        <shape android:shape="rectangle">
+            <!--填充颜色-->
+            <solid android:color="@color/red"/>
+
+            <!--四角弧形的半径-->
+            <corners android:radius="5dp"/>
+
+            <!--与四角的边距-->
+            <padding android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--填充颜色-->
+            <solid android:color="@color/common_grey"/>
+            <!--四角弧形的半径-->
+            <corners android:radius="5dp"/>
+            <!--与四角的边距-->
+            <padding android:bottom="10dp"
+                android:left="10dp"
+                android:right="10dp"
+                android:top="10dp"/>
+
+        </shape>
+    </item>
+
+</selector>

@@ -20,8 +20,8 @@ import com.orhanobut.logger.Logger;
 import java.util.HashMap;
 import java.util.Map;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
 import butterknife.OnEditorAction;
 import butterknife.OnItemClick;
 import jixiang.com.myandroid.adapter.MainAdapter;
@@ -29,9 +29,9 @@ import jixiang.com.myandroid.view.OverScrollListView;
 
 public class MainActivity extends BaseActivity {
 
-    @InjectView(R.id.auto_completedtextview)
+    @Bind(R.id.auto_completedtextview)
     AutoCompleteTextView autoCompletedtextview;
-    @InjectView(R.id.listview)
+    @Bind(R.id.listview)
     OverScrollListView listview;
 
 
@@ -42,7 +42,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //ButterKnife 用于快速集成xml到activity中
-        ButterKnife.inject(this);
+        ButterKnife.bind(this);
         init();
         initDisplayMessage();
     }
