@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level-list xmlns:android="http://schemas.android.com/apk/res/android">
-<item android:maxLevel="10" android:minLevel="0" android:drawable="@drawable/aa4" />
-<item android:maxLevel="20" android:minLevel="11" android:drawable="@drawable/a005" />
-<item android:maxLevel="30" android:minLevel="21" android:drawable="@drawable/a006" />
-<item android:maxLevel="39" android:minLevel="31" android:drawable="@drawable/a007" />
+<item android:maxLevel="9" android:minLevel="0" android:drawable="@drawable/aa4" />
+<item android:maxLevel="19" android:minLevel="10" android:drawable="@drawable/a005" />
+<item android:maxLevel="29" android:minLevel="20" android:drawable="@drawable/a006" />
+<item android:maxLevel="39" android:minLevel="30" android:drawable="@drawable/a007" />
 </level-list>

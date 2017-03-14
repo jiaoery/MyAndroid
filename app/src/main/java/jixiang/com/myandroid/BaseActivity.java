@@ -9,9 +9,10 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
-public abstract class BaseActivity extends FragmentActivity{
+public abstract class BaseActivity extends AppCompatActivity{
 	//自定义的退出程序的广播
 	public static final String EXIT_ACTION = "com.android.learning.EXIT_APP";
 	public static final String NETWORK_CHANGE = ConnectivityManager.CONNECTIVITY_ACTION;
