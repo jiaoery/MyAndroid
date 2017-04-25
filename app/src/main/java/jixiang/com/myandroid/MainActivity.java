@@ -79,8 +79,9 @@ public class MainActivity extends BaseActivity {
      */
     private void jump(String name) {
         String toclass = map.get(name);
+        //显示所进入的页面
+        System.out.println("进入页面："+toclass);
         if(name.equals("EncryptDianry")){
-            System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             Intent intent = new Intent();
             ComponentName componentName = new ComponentName("com.eibit.securitydinary", "com.eibit.securitydinary.QQDinaryHome");
             intent.setComponent(componentName);
