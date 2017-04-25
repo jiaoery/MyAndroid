@@ -11,15 +11,17 @@ import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnPreDrawListener;
 import android.widget.ImageView;
 
+import jixiang.com.myandroid.BaseActivity;
 import jixiang.com.myandroid.R;
 
 
-public class TestImageViewActivity extends Activity{
+public class TestImageViewActivity extends BaseActivity{
 	ImageView imageView;
 	private int width;
 	private int height;
 	Bitmap bitmap;
 	boolean isMeasured = false;
+	//图片资源
 	int[] images = {R.drawable.aa4, R.drawable.a005, R.drawable.a006, R.drawable.a007, R.drawable.a008};
 	int index = 0;
 	
