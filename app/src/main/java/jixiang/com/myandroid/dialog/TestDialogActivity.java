@@ -28,13 +28,14 @@ import android.widget.TimePicker;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
+import jixiang.com.myandroid.BaseActivity;
 import jixiang.com.myandroid.R;
 import jixiang.com.myandroid.adapterview.FruitAdapter;
 import jixiang.com.myandroid.adapterview.TestSpinnerActivity;
 import jixiang.com.myandroid.notification.TestNotificationActivity;
 
 
-public class TestDialogActivity extends Activity implements OnClickListener {
+public class TestDialogActivity extends BaseActivity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

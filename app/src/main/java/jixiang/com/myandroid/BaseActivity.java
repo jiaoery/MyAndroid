@@ -35,6 +35,7 @@ public abstract class BaseActivity extends AppCompatActivity{
 		filter.addAction(EXIT_ACTION);
 		filter.addAction(NETWORK_CHANGE);
 		registerReceiver(exitReceiver, filter); //注册广播接收器
+		System.out.println("进入页面："+this.toString());
 	}
 
 	// 需要setContentView之前调用
