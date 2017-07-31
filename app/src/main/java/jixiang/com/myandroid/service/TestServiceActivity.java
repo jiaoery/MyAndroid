@@ -10,10 +10,11 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import jixiang.com.myandroid.BaseActivity;
 import jixiang.com.myandroid.R;
 
 
-public class TestServiceActivity extends FragmentActivity implements OnClickListener{
+public class TestServiceActivity extends BaseActivity implements OnClickListener{
  
 	Intent intent;
 	
