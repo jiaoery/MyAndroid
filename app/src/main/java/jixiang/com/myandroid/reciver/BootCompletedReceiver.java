@@ -9,7 +9,7 @@ import com.orhanobut.logger.Logger;
 import jixiang.com.myandroid.MainActivity;
 
 /**
- * Created by 周念 on 2016/12/6.
+ * Created by on 2016/12/6.
  */
 
 public class BootCompletedReceiver extends BroadcastReceiver {
