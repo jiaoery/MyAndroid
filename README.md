@@ -1,16 +1,16 @@
 # MyAndroid
-##整理自己从学习android到完全了解android的学习过程。基本从基础到提升的demo都在里面，
+## 整理自己从学习android到完全了解android的学习过程。基本从基础到提升的demo都在里面，
 
 ****
-###　　　　　　　　　  Author:骑着猪的小王子
-###　　　　　　　　　 E-mail:jix@03199.com
+## Author:骑着猪的小王子
+### E-mail:373105324@qq.com
 
 第一次更新内容
 
 本次更新主要提交了 布局文件的布局效果，其中包括LinearLayout，FrameLayout，TableLayout，RelativyLayout,GridLayout.</br>
 于AsoluteLayout已经过时,这里不再赘述。之后android更新自己的最新。
 
-#1.布局篇
+# 1.布局篇
   首先在该项目中我们使用到布局，android中提供了以下几种布局：
   * 线性布局 （LinearLayout）
   * 相对布局 （RelativiteLayout）
@@ -22,7 +22,7 @@
 项目中写出一个计算器的效果作为参照<br>
 详细点可以看代码和参考google提供的官方文档http://www.android-doc.com/reference/android/widget/package-summary.html
 
-#2.控件篇
+# 2.控件篇
   在日常的开发中经常会使用到各种各样的控件，这里有一些现在最基础或者非常流行的控件:
   * Textview ：文字展示最常见的控件
   * Button: 按钮控件 设置onclicklistener来设置点击事件
