@@ -20,7 +20,7 @@
   * 绝对布局（AbsoluteLayout）:在android大多不适合使用，这里不再赘述
 
 项目中写出一个计算器的效果作为参照<br>
-详细点可以看代码和参考google提供的官方文档http://www.android-doc.com/reference/android/widget/package-summary.html
+详细点可以看代码和参考google提供的官方文档[点这里](http://www.android-doc.com/reference/android/widget/package-summary.html)
 
 # 2.控件篇
   在日常的开发中经常会使用到各种各样的控件，这里有一些现在最基础或者非常流行的控件:
