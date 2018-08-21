@@ -9,8 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_content"
-        android:background="@drawable/text_bg"
+        android:background="@drawable/button_selector"
         android:autoLink="web"
+        android:clickable="true"
         android:textColorLink="@color/red"
         android:drawableTop="@drawable/a005"
         android:drawableBottom="@drawable/a006"
@@ -23,11 +24,22 @@
         android:hint="@string/app_name"
         android:textIsSelectable="true"
         android:textColorHighlight="@color/common_grey_word"
-        />
+        android:focusable="true" />
 
     <ImageView
-        android:layout_width="200dip"
-        android:layout_height="200dip"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:background="@drawable/text_bg"
         android:layout_margin="20dip"/>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_selector"
+        android:text="@string/text_content"
+        android:clickable="true"
+        android:focusable="true"
+        />
 </LinearLayout>
