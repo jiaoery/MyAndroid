@@ -3,10 +3,10 @@ package jixiang.com.myandroid.drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import jixiang.com.myandroid.R;
 
@@ -17,7 +17,7 @@ import jixiang.com.myandroid.R;
  */
 public class TestTransitionDrawable extends AppCompatActivity {
 
-    @Bind(R.id.iv_transition)
+    @BindView(R.id.iv_transition)
     ImageView ivTransition;
     Handler handler=new Handler();
 

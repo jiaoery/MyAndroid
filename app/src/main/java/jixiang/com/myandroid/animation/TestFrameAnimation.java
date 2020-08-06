@@ -2,7 +2,7 @@ package jixiang.com.myandroid.animation;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.widget.ImageView;
 
 import jixiang.com.myandroid.R;

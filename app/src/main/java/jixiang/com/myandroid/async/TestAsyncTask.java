@@ -2,7 +2,7 @@ package jixiang.com.myandroid.async;
 
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.widget.ScrollView;
 import android.widget.TextView;
 

@@ -1,7 +1,7 @@
 package jixiang.com.myandroid.networkbitmap;
 
 import android.graphics.Bitmap;
-import android.support.v4.util.LruCache;
+import androidx.collection.LruCache;
 /**
  * 图片缓存
  *

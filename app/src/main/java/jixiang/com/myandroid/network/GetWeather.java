@@ -28,7 +28,7 @@ import org.json.JSONObject;
 
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import jixiang.com.myandroid.http.AsyncHttpResponseHandler;
 import jixiang.com.myandroid.http.HttpClientUtils;

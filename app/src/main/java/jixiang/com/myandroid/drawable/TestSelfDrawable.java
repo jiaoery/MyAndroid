@@ -3,10 +3,10 @@ package jixiang.com.myandroid.drawable;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import jixiang.com.myandroid.R;
 
@@ -15,7 +15,7 @@ import jixiang.com.myandroid.R;
  */
 public class TestSelfDrawable extends AppCompatActivity {
 
-    @Bind(R.id.iv_self)
+    @BindView(R.id.iv_self)
     ImageView ivSelf;
 
     @Override

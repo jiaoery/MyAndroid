@@ -2,25 +2,25 @@ package jixiang.com.myandroid.drawable;
 
 import android.graphics.drawable.LevelListDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import jixiang.com.myandroid.R;
 
 public class TestLevelListDrawable extends AppCompatActivity {
 
-    @Bind(R.id.imageview)
+    @BindView(R.id.imageview)
     ImageView imageview;
-    @Bind(R.id.btn_plus)
+    @BindView(R.id.btn_plus)
     Button btnPlus;
-    @Bind(R.id.btn_minus)
+    @BindView(R.id.btn_minus)
     Button btnMinus;
-    @Bind(R.id.tv_level)
+    @BindView(R.id.tv_level)
     TextView tvLevel;
 
 

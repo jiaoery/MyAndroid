@@ -2,12 +2,12 @@ package jixiang.com.myandroid.drawable;
 
 import android.graphics.drawable.ClipDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import jixiang.com.myandroid.R;
@@ -19,13 +19,13 @@ import jixiang.com.myandroid.R;
  * 它根据level的属性值，决定剪切区域的大小。
  */
 public class TestClipDrawable extends AppCompatActivity {
-    @Bind(R.id.iv_clip)
+    @BindView(R.id.iv_clip)
     ImageView clip;
-    @Bind(R.id.btn_plus)
+    @BindView(R.id.btn_plus)
     Button btnPlus;
-    @Bind(R.id.btn_minus)
+    @BindView(R.id.btn_minus)
     Button btnMinus;
-    @Bind(R.id.tv_level)
+    @BindView(R.id.tv_level)
     TextView tvLevel;
 
     @Override

@@ -19,7 +19,5 @@ public class MyApplication extends Application {
      * 配置设置参数
      */
     private void initSetting() {
-        //Logger 参数配置
-        Logger.init("MyAndroid");
     }
 }

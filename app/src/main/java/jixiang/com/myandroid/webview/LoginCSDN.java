@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 

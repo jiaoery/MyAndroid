@@ -10,6 +10,6 @@
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        class="com.three.androidlearning.fragment.TitlesFragment" />
+        class="jixiang.com.myandroid.fragment.TitlesFragment" />
     
 </LinearLayout>

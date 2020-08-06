@@ -1,9 +1,8 @@
 package jixiang.com.myandroid.drawable;
 
 import android.content.Intent;
-import android.graphics.drawable.ClipDrawable;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -14,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import jixiang.com.myandroid.R;
 
@@ -25,7 +24,7 @@ import jixiang.com.myandroid.R;
 public class TestDrawableActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
 
-    @Bind(R.id.lv_drawable)
+    @BindView(R.id.lv_drawable)
     ListView lvDrawable;
     List<Map<String,String>> data=new ArrayList<>();
 
